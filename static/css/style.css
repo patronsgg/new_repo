@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+}
+
+#ph {
+    height: 75vh;
+    width: 75vw; 
+}
+
+#carouselExampleIndicators {
+    margin-left: auto;
+    margin-right: auto;
+    height: 75vh;
+    width: 75vw;
+}
