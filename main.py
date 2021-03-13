@@ -1,4 +1,4 @@
-from flask import Flask, url_for, request
+from flask import Flask, url_for
 
 app = Flask(__name__)
 
@@ -21,7 +21,6 @@ def carousel():
                       <header>
                         <h1>Пейзажи Марса</h1>
                       </header>
-                        <script src="static\js\script.js"></script>
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                           <ol class="carousel-indicators">
                             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
@@ -30,13 +29,13 @@ def carousel():
                           </ol>
                               <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                  <img src="static\img\\2.jpeg" class="d-block w-100" id="ph" alt="...">
+                                  <img src="{url_for('static', filename='img/1.jpg')}" class="d-block w-100" id="ph" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                  <img src="static\img\\1.jpg" class="d-block w-100" id="ph" alt="...">
+                                  <img src="{url_for('static', filename='img/2.jpeg')}" class="d-block w-100" id="ph" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                  <img src="static\img\\3.jpg" class="d-block w-100" id="ph" alt="...">
+                                  <img src="{url_for('static', filename='img/3.jpg')}" class="d-block w-100" id="ph" alt="...">
                                 </div>
                           </div>
                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
